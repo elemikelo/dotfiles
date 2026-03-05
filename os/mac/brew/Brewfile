@@ -12,7 +12,6 @@ tap "twilio/brew"
 tap "yqrashawn/goku"
 brew "bash"
 brew "bat"
-brew "openssl@3"
 brew "coreutils"
 brew "libssh2"
 brew "libgit2"
@@ -26,12 +25,9 @@ brew "jupyterlab"
 brew "libzip"
 brew "make"
 brew "mas"
-brew "node@16"
 brew "mongosh"
 brew "navi"
-brew "openssl@1.1"
 brew "python@3.10"
-brew "node@14"
 brew "pyenv"
 brew "starship"
 brew "tldr"
@@ -49,11 +45,7 @@ cask "font-agave-nerd-font"
 cask "font-hack-nerd-font"
 cask "monolingual"
 cask "ngrok"
-mas "GarageBand", id: 682658836
-mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "PDFgear", id: 6469021132
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
