@@ -7,6 +7,28 @@
 * Install git
 * Clone your dotfiles repository `git clone [your repository of dotfiles] $HOME/.dotfiles`
 * Go to your dotfiles folder `cd $HOME/.dotfiles`
+* Chipset arm
+Installing docpars on Apple Silicon
+The docpars binary distributed through Homebrew was compiled for x86_64, which caused the error:
+zsh: bad CPU type in executable: docpars
+on Apple Silicon (arm64) machines.
+
+To fix this, the binary was compiled manually using Rust and then installed in /opt/homebrew/bin.
+Steps
+	1.	Clone the repository:
+git clone https://github.com/denisidoro/docpars
+cd docpars
+	2.	Compile the binary with Rust:
+cargo build --release
+	3.	Move the compiled binary to Homebrew’s bin directory:
+mv target/release/docpars /opt/homebrew/bin/docpars
+chmod +x /opt/homebrew/bin/docpars
+
+	4.	Verify the installation:
+docpars --help
+
+After this, docpars runs natively on arm64 and works correctly with dotly.
+:::
 * Install git submodules `git submodule update --init --recursive modules/dotly`
 * Install your dotfiles `DOTFILES_PATH="$HOME/.dotfiles" DOTLY_PATH="$DOTFILES_PATH/modules/dotly" "$DOTLY_PATH/bin/dot" self install`
 * Restart your terminal
