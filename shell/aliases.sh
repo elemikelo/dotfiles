@@ -3,8 +3,8 @@ alias sudo='sudo '
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias ll="exa --icons --group-directories-first"
-alias la="exa --icons --group-directories-first -la"
+alias ll="eza --icons --group-directories-first"
+alias la="eza --icons --group-directories-first -la"
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
 
