@@ -1,10 +1,12 @@
-zimfw() { source /Users/elemikelo/.dotfiles/shell/zsh/.zim/zimfw.zsh "${@}" }
-zmodule() { source /Users/elemikelo/.dotfiles/shell/zsh/.zim/zimfw.zsh "${@}" }
-typeset -gr _zim_fpath=(/Users/elemikelo/.dotfiles/shell/zsh/.zim/modules/git-info/functions)
-fpath=(${_zim_fpath} ${fpath})
-autoload -Uz -- coalesce git-action git-info
-source /Users/elemikelo/.dotfiles/shell/zsh/.zim/modules/environment/init.zsh
-source /Users/elemikelo/.dotfiles/shell/zsh/.zim/modules/input/init.zsh
-source /Users/elemikelo/.dotfiles/shell/zsh/.zim/modules/completion/init.zsh
-source /Users/elemikelo/.dotfiles/shell/zsh/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/elemikelo/.dotfiles/shell/zsh/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
+# FILE AUTOMATICALLY GENERATED FROM /Users/luismi/.zimrc
+# EDIT THE SOURCE FILE AND THEN RUN zimfw build. DO NOT DIRECTLY EDIT THIS FILE!
+
+if [[ -e ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]] zimfw() { source "${HOME}/.dotfiles/shell/zsh/.zim/zimfw.zsh" "${@}" }
+fpath=("${HOME}/.dotfiles/shell/zsh/.zim/modules/git/functions" "${HOME}/.dotfiles/shell/zsh/.zim/modules/utility/functions" "${HOME}/.dotfiles/shell/zsh/.zim/modules/duration-info/functions" "${HOME}/.dotfiles/shell/zsh/.zim/modules/zsh-completions/src" ${fpath})
+autoload -Uz -- git-alias-lookup git-branch-current git-branch-delete-interactive git-branch-remote-tracking git-dir git-ignore-add git-root git-stash-clear-interactive git-stash-recover git-submodule-move git-submodule-remove mkcd mkpw duration-info-precmd duration-info-preexec
+source "${HOME}/.dotfiles/shell/zsh/.zim/modules/git/init.zsh"
+source "${HOME}/.dotfiles/shell/zsh/.zim/modules/termtitle/init.zsh"
+source "${HOME}/.dotfiles/shell/zsh/.zim/modules/utility/init.zsh"
+source "${HOME}/.dotfiles/shell/zsh/.zim/modules/duration-info/init.zsh"
+source "${HOME}/.dotfiles/shell/zsh/.zim/modules/asciiship/asciiship.zsh-theme"
+source "${HOME}/.dotfiles/shell/zsh/.zim/modules/zsh-history-substring-search/zsh-history-substring-search.zsh"
