@@ -5,7 +5,7 @@
    "editor.fontSize": 13,
    "editor.dragAndDrop": false,
    "terminal.integrated.fontSize": 12,
-   "terminal.integrated.fontFamily": "MesloLGS NF",
+   "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
    "editor.lineHeight": 2.5,
    "editor.rulers": [120],
    "editor.tabSize": 2,
