@@ -30,7 +30,7 @@ alias o.='open .'
 alias up='dot package update_all'
 
 alias mst='cd ~/Desktop/projects/bipi-api && npm run test-single'
-alias test='cd ~/Desktop/projects/bipi-api && PORT=9989 npm test'
+alias test='node --run build:api && node --run coverage-parallel && node --run validate-coverage -- 0 .'
 alias back='cd ~/Desktop/projects/bipi-api && npm run backend'
 alias front='cd ~/Desktop/projects/bipi-portal && npm run start'
 alias debug='cd ~/Desktop/projects/bipi-api && npm run backend:debug'

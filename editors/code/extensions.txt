@@ -10,7 +10,6 @@ csantiago132.intellij-ish-darcula-theme
 daltonmenezes.aura-theme
 danijelmalinovic.visual-studio-blue-theme
 dbaeumer.vscode-eslint
-devlos.vuejs-snippets
 docker.docker
 eamodio.gitlens
 eliverlara.andromeda
@@ -26,7 +25,6 @@ hashicorp.terraform
 hbenl.vscode-mocha-test-adapter
 hbenl.vscode-test-explorer
 hermitter.oh-lucy-vscode
-hollowtree.vue-snippets
 inferrinizzard.prettier-sql-vscode
 jiapeiyao.tab-group
 johnpapa.vscode-peacock
@@ -53,11 +51,9 @@ ms-python.vscode-python-envs
 ms-vscode-remote.remote-containers
 ms-vscode.live-server
 ms-vscode.test-adapter-converter
-ms-vscode.vscode-typescript-next
 ms-vsliveshare.vsliveshare
 mtxr.sqltools
 nabeelvalley.typewriter
-octref.vetur
 orta.vscode-jest
 pabue.linear-theme
 pavlopiga.intellij-vscode-soft-dark-theme
@@ -73,7 +69,6 @@ renxzen.google-monokai-theme
 ryanluker.vscode-coverage-gutters
 shd101wyy.markdown-preview-enhanced
 solarliner.linux-themes
-stepsize.tech-debt-tracker
 tempus157.google-material-dark-theme
 tinkertrain.theme-panda
 trinm1709.dracula-theme-from-intellij

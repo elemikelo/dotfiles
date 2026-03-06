@@ -118,5 +118,10 @@
     "key": "cmd+k",
     "command": "workbench.view.scm",
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "cmd+[Semicolon]",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "npm run test-single '${file}'\u000D" }
   }
 ]
