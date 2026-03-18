@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title indesign-close
+# @raycast.mode compact
+
+# Optional parameters:
+# @raycast.icon 🤝
+# @raycast.packageName Dev Utils
+
+# Documentation:
+# @raycast.description Close indesign
+# @raycast.author elemikelo
+# @raycast.authorURL https://raycast.com/elemikelo
+
+# cerrar InDesign
+osascript -e 'quit app "Adobe InDesign 2026"'
+
+# matar procesos de Adobe
+pkill -f CCXProcess 2>/dev/null
+pkill -f "Adobe Crash Processor" 2>/dev/null
+pkill -f "Creative Cloud Helper" 2>/dev/null
+pkill -f AdobeIPCBroker 2>/dev/null
+pkill -f "Core Sync" 2>/dev/null
+pkill -f "Adobe Desktop Service" 2>/dev/null

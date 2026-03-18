@@ -38,3 +38,7 @@ alias mongors='run-rs --mongod --host=127.0.0.1 -k --dbpath ~/Desktop/projects/d
 alias clean_branches='git branch | grep -v "master" | grep -v "development" | xargs git branch -d'
 alias open_ports="netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 alias ngrok_on='ngrok http 3000 --host-header="localhost:3000" && ngrok http --host-header=rewrite 3000'
+link() {
+  ln -s "$1" "$2"
+  echo "🔗 Linked $2 → $1"
+}

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title indesign
+# @raycast.mode compact
+
+# Optional parameters:
+# @raycast.icon 🎆
+# @raycast.packageName Dev Utils
+
+# Documentation:
+# @raycast.description open indesign
+# @raycast.author elemikelo
+# @raycast.authorURL https://raycast.com/elemikelo
+
+# matar procesos de Creative Cloud si existen
+pkill -f CCXProcess 2>/dev/null
+pkill -f "Creative Cloud Helper" 2>/dev/null
+pkill -f AdobeIPCBroker 2>/dev/null
+pkill -f "Core Sync" 2>/dev/null
+pkill -f "Adobe Desktop Service" 2>/dev/null
+
+# abrir InDesign
+open -a "Adobe InDesign 2026"

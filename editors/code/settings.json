@@ -1,117 +1,116 @@
 {
-   "editor.suggestSelection": "first",
-   "editor.fontFamily": "DankMono Nerd Font",
-   "editor.fontLigatures": true,
-   "editor.fontSize": 13,
-   "editor.dragAndDrop": false,
-   "terminal.integrated.fontSize": 12,
-   "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
-   "editor.lineHeight": 2.5,
-   "editor.rulers": [120],
-   "editor.tabSize": 2,
-   "editor.wordWrap": "wordWrapColumn",
-   "explorer.confirmDelete": false,
-   "explorer.confirmDragAndDrop": false,
-   "explorer.excludeGitIgnore": false,
-   "files.autoSave": "onFocusChange",
-   "files.eol": "\n",
-   "search.useGlobalIgnoreFiles": true,
-   "search.useIgnoreFiles": true,
-   "workbench.editor.showTabs": "single",
-   "explorer.openEditors.visible": 1,
-   "editor.cursorSmoothCaretAnimation": "on",
-   "editor.smoothScrolling": true,
-   "explorer.compactFolders": false,
-   "editor.renderWhitespace": "selection",
-   "editor.bracketPairColorization.enabled": true,
-   "editor.lightbulb.enabled": "off",
-   "workbench.list.horizontalScrolling": true,
-   "workbench.tree.indent": 20,
-   "workbench.list.smoothScrolling": true,
-   "workbench.productIconTheme": "fluent-icons",
-   "workbench.iconTheme": "symbols",
-   "breadcrumbs.symbolPath": "off",
-   "workbench.startupEditor": "none",
+   "editor.suggestSelection": "first", // Selecciona la primera sugerencia automáticamente
+   "editor.fontFamily": "DankMono Nerd Font", // Fuente del editor
+   "editor.fontLigatures": true, // Activa ligaduras (=>, ===, etc.)
+   "editor.fontSize": 12, // Tamaño de fuente del editor
+   "editor.dragAndDrop": true, // Desactiva arrastrar texto dentro del editor
+   "terminal.integrated.fontSize": 12, // Tamaño de fuente del terminal
+   "terminal.integrated.fontFamily": "MesloLGS Nerd Font", // Fuente del terminal
+   "editor.lineHeight": 24, // Altura de línea (espaciado vertical)
+   "editor.rulers": [120], // Línea guía en la columna 120
+   "editor.tabSize": 2, // Tamaño de tabulación (2 espacios)
+   "editor.wordWrap": "wordWrapColumn", // Ajuste de línea según columna definida
+   "explorer.confirmDelete": false, // No pide confirmación al borrar archivos
+   "explorer.confirmDragAndDrop": false, // No pide confirmación al mover archivos
+   "explorer.excludeGitIgnore": false, // Muestra archivos ignorados por git
+   "files.autoSave": "onFocusChange", // Guarda automáticamente al cambiar de foco
+   "files.eol": "\n", // Usa salto de línea tipo Unix (LF)
+   "search.useGlobalIgnoreFiles": true, // Respeta archivos ignore globales en búsqueda
+   "search.useIgnoreFiles": true, // Respeta .gitignore en búsqueda
+   "workbench.editor.showTabs": "single", // Muestra solo una pestaña abierta
+   "explorer.openEditors.visible": 1, // Muestra máximo 1 archivo abierto arriba
+   "editor.cursorSmoothCaretAnimation": "on", // Animación suave del cursor
+   "editor.smoothScrolling": true, // Scroll suave en el editor
+   "explorer.compactFolders": false, // No agrupa carpetas en una sola línea
+   "editor.renderWhitespace": "selection", // Muestra espacios solo al seleccionar
+   "editor.bracketPairColorization.enabled": true, // Colorea pares de llaves/paréntesis
+   "editor.lightbulb.enabled": "off", // Desactiva sugerencias visuales (bombilla)
+   "workbench.list.horizontalScrolling": true, // Permite scroll horizontal en listas
+   "workbench.tree.indent": 20, // Indentación de árboles (explorer)
+   "workbench.list.smoothScrolling": true, // Scroll suave en listas
+   "workbench.productIconTheme": "fluent-icons", // Tema de iconos de producto
+   "workbench.iconTheme": "symbols", // Tema de iconos de archivos
+   "breadcrumbs.symbolPath": "off", // Oculta ruta de símbolos en breadcrumbs
+   "workbench.startupEditor": "none", // No abre pantalla de inicio
    // Actions
-   "editor.formatOnPaste": false,
+   "editor.formatOnPaste": false, // No formatea al pegar
    "[typescript]": {
-       "editor.formatOnSave": false,
+       "editor.formatOnSave": false, // No formatea al guardar TS
        "editor.codeActionsOnSave": {
-           "source.fixAll.eslint": "explicit"
+           "source.fixAll.eslint": "explicit" // Ejecuta fixes de ESLint manualmente
        },
    },
    "[javascript]": {
-       "editor.formatOnSave": false,
+       "editor.formatOnSave": false, // No formatea al guardar JS
        "editor.codeActionsOnSave": {
-           "source.fixAll.eslint": "explicit"
+           "source.fixAll.eslint": "explicit" // Ejecuta fixes de ESLint manualmente
        },
-       "editor.defaultFormatter": "vscode.typescript-language-features",
+       "editor.defaultFormatter": "vscode.typescript-language-features", // Formatter por defecto JS
    },
-   "explorer.fileNesting.enabled": true,
+   "explorer.fileNesting.enabled": true, // Activa agrupación de archivos relacionados
    "explorer.fileNesting.patterns": {
-       "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts, ${capture}.spec.ts",
-       "*.ts": "${capture}.spec.ts, ${capture}.integration.ts,${capture}.mock.ts, ${capture}.mother.ts"
+       "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts, ${capture}.spec.ts", // Agrupa archivos JS relacionados
+       "*.ts": "${capture}.spec.ts, ${capture}.integration.ts,${capture}.mock.ts, ${capture}.mother.ts" // Agrupa archivos TS relacionados
    },
-   "typescript.updateImportsOnFileMove.enabled": "always",
+   "typescript.updateImportsOnFileMove.enabled": "always", // Actualiza imports al mover archivos TS
    // Git
-   "git.autofetch": true,
-   "gitlens.hovers.currentLine.over": "line",
-   "gitlens.codeLens.enabled": false,
-   "conventionalCommits.showNewVersionNotes": false,
+   "git.autofetch": true, // Hace fetch automático de git
+   "gitlens.hovers.currentLine.over": "line", // Info de git al pasar por línea
+   "gitlens.codeLens.enabled": false, // Desactiva CodeLens de GitLens
+   "conventionalCommits.showNewVersionNotes": false, // No muestra notas de versión
    // Extensions
-   "focus.opacity": "0.7",
-   "focus.highlightRange": "none",
+   "focus.opacity": "0.7", // Opacidad de áreas desenfocadas
+   "focus.highlightRange": "none", // No resalta rango enfocado
    // "jest.autoRun": "off",
-   "githubPullRequests.pushBranch": "always",
-   "symbols.hidesExplorerArrows": false,
-   "workbench.colorCustomizations": {},
-   "editor.inlineSuggest.enabled": true,
-   "git.enableSmartCommit": true,
-   "testExplorer.useNativeTesting": true,
-   "errorLens.enabled": true,
-   "errorLens.fontSize": "0.8em",
-   "errorLens.fontFamily": "Cascadia code",
-   "githubPullRequests.pullBranch": "never",
-   "gitlens.statusBar.command": "gitlens.toggleFileChanges",
-   "gitlens.codeLens.recentChange.command": "gitlens.toggleFileChanges",
-   "gitlens.codeLens.authors.command": "gitlens.toggleFileChanges",
-   "git.confirmSync": false,
-   "editor.gotoLocation.multipleDefinitions": "goto",
-   "terminal.integrated.env.osx": {},
-   "editor.wordWrapColumn": 120,
+   "githubPullRequests.pushBranch": "always", // Siempre hace push de ramas en PR
+   "symbols.hidesExplorerArrows": false, // Muestra flechas en explorer
+   "workbench.colorCustomizations": {}, // Customización de colores
+   "editor.inlineSuggest.enabled": true, // Sugerencias inline (tipo Copilot)
+   "git.enableSmartCommit": true, // Permite commit sin stage manual
+   "testExplorer.useNativeTesting": true, // Usa testing nativo
+   "errorLens.enabled": true, // Muestra errores inline
+   "errorLens.fontSize": "0.8em", // Tamaño de fuente de errores
+   "errorLens.fontFamily": "DankMono Nerd Font", // Fuente de errores
+   "githubPullRequests.pullBranch": "never", // No hace pull automático en PR
+   "gitlens.statusBar.command": "gitlens.toggleFileChanges", // Acción en barra de estado
+   "gitlens.codeLens.recentChange.command": "gitlens.toggleFileChanges", // Acción cambios recientes
+   "gitlens.codeLens.authors.command": "gitlens.toggleFileChanges", // Acción autores
+   "git.confirmSync": false, // No pide confirmación al sincronizar
+   "editor.gotoLocation.multipleDefinitions": "goto", // Va directo a definición si hay varias
+   "terminal.integrated.env.osx": {}, // Variables de entorno en macOS
+   "editor.wordWrapColumn": 120, // Columna para wrap
    "github.copilot.enable": {
-       "*": true,
-       "plaintext": false,
-       "markdown": true,
-       "scminput": false
+       "*": true, // Copilot activo en todo
+       "plaintext": false, // Desactivado en texto plano
+       "markdown": true, // Activo en markdown
+       "scminput": false // Desactivado en commits
    },
-   "typescript.preferences.importModuleSpecifier": "relative",
-   "window.openFoldersInNewWindow": "on",
-   "javascript.updateImportsOnFileMove.enabled": "always",
-   "window.commandCenter": false,
-   "editor.minimap.enabled": false,
-   "workbench.colorTheme": "GitHub Dark",
+   "typescript.preferences.importModuleSpecifier": "relative", // Imports relativos en TS
+   "window.openFoldersInNewWindow": "on", // Abre carpetas en nueva ventana
+   "javascript.updateImportsOnFileMove.enabled": "always", // Actualiza imports en JS
+   "window.commandCenter": false, // Oculta command center
+   "editor.minimap.enabled": false, // Desactiva minimapa
+   "workbench.colorTheme": "Gruvbox Dark Hard", // Tema de colores
    // "workbench.colorTheme": "GitHub Dark Dimmed",
-   "gitlens.graph.minimap.enabled": false,
+   "gitlens.graph.minimap.enabled": false, // Minimapa en graph desactivado
    "gitlens.graph.minimap.additionalTypes": [
-       "localBranches"
+       "localBranches" // Tipos adicionales en minimapa
    ],
-   "errorLens.messageBackgroundMode": "message",
-   "console-ninja.featureSet": "Community",
-   "zenMode.hideLineNumbers": false,
-   "javascript.preferences.importModuleSpecifier": "relative",
-   "window.zoomLevel": 1,
+   "errorLens.messageBackgroundMode": "message", // Fondo en mensajes de error
+   "console-ninja.featureSet": "Community", // Configuración extensión Console Ninja
+   "zenMode.hideLineNumbers": false, // Muestra números en modo zen
+   "javascript.preferences.importModuleSpecifier": "relative", // Imports relativos en JS
+   "window.zoomLevel": 1, // Zoom de la UI
    "[javascript][typescript]": {
        "editor.codeActionsOnSave": {
-           "source.fixAll.eslint": "explicit"
+           "source.fixAll.eslint": "explicit" // ESLint fix manual combinado
        }
    },
-   "workbench.tree.enableStickyScroll": true,
-   "workbench.activityBar.location": "hidden",
-   "window.dialogStyle": "custom",
-   "window.nativeTabs": true,
-   "rapidapi.terminalLink.enabled": false,
-   "github.copilot.editor.enableAutoCompletions": true,
+   "workbench.tree.enableStickyScroll": true, // Scroll fijo en árboles
+   "window.dialogStyle": "custom", // Estilo de diálogos personalizado
+   "window.nativeTabs": true, // Usa tabs nativos del sistema
+   "rapidapi.terminalLink.enabled": false, // Desactiva links en terminal de RapidAPI
+   "github.copilot.editor.enableAutoCompletions": true, // Autocompletado Copilot
    "gitlens.views.scm.grouped.views": {
        "commits": true,
        "branches": true,
@@ -124,26 +123,24 @@
        "searchAndCompare": true,
        "launchpad": false
    },
-   "editor.fontWeight": "normal",
+   "editor.fontWeight": "normal", // Peso de fuente normal
    "editor.tokenColorCustomizations": {
        "textMateRules": [
            {
                "scope": [
-                   // following will be in italic (=FlottFlott)
-                   "entity.name.type.class", // class names
-                   "keyword", // import, export, return…
-                   "constant", // String, Number, Boolean…, this, super
-                   "storage.modifier", // static keyword
-                   "storage.type.class.js", // class keyword
-                   "storage.type.js", // function keyword
+                   "entity.name.type.class",
+                   "keyword",
+                   "constant",
+                   "storage.modifier",
+                   "storage.type.class.js",
+                   "storage.type.js"
                ],
                "settings": {
-                   "fontStyle": "italic"
+                   "fontStyle": "italic" // Aplica cursiva a ciertos tokens
                }
            },
            {
                "scope": [
-                   //following will be excluded from italics (VSCode has some defaults for italics)
                    "invalid",
                    "keyword.operator",
                    "constant.numeric.css",
@@ -152,14 +149,14 @@
                    "constant.numeric.json"
                ],
                "settings": {
-                   "fontStyle": ""
+                   "fontStyle": "" // Quita cursiva en estos casos
                }
            }
        ]
    },
-   "github.copilot.advanced": {},
-   "coverage-gutters.coverageBaseDir": "coverage/**",
-   "coverage-gutters.showLineCoverage": true,
+   "github.copilot.advanced": {}, // Config avanzada Copilot
+   "coverage-gutters.coverageBaseDir": "coverage/**", // Ruta base cobertura
+   "coverage-gutters.showLineCoverage": true, // Muestra cobertura por línea
    "coverage-gutters.coverageFileNames": [
        "lcov.info",
        "cov.xml",
@@ -167,35 +164,40 @@
        "jacoco.xml",
        "coverage.cobertura.xml"
    ],
-   "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    ".claude/rules": true,
-    "~/.copilot/instructions": true,
-    "~/.claude/rules": true,
-    "/var/folders/5s/kyx9ph1j2xlf6sf2t4y55fvw0000gn/T/postman-collections-post-response.instructions.md": true,
-    "/var/folders/5s/kyx9ph1j2xlf6sf2t4y55fvw0000gn/T/postman-collections-pre-request.instructions.md": true,
-    "/var/folders/5s/kyx9ph1j2xlf6sf2t4y55fvw0000gn/T/postman-folder-post-response.instructions.md": true,
-    "/var/folders/5s/kyx9ph1j2xlf6sf2t4y55fvw0000gn/T/postman-folder-pre-request.instructions.md": true,
-    "/var/folders/5s/kyx9ph1j2xlf6sf2t4y55fvw0000gn/T/postman-http-request-post-response.instructions.md": true,
-    "/var/folders/5s/kyx9ph1j2xlf6sf2t4y55fvw0000gn/T/postman-http-request-pre-request.instructions.md": true,
-    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-collections-post-response.instructions.md": true,
-    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-collections-pre-request.instructions.md": true,
-    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-folder-post-response.instructions.md": true,
-    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-folder-pre-request.instructions.md": true,
-    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-http-request-post-response.instructions.md": true,
-    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-http-request-pre-request.instructions.md": true
-},
-   "github.copilot.nextEditSuggestions.enabled": true,
+   "github.copilot.nextEditSuggestions.enabled": true, // Sugerencias siguientes de Copilot
    "mssql.connectionGroups": [
        {
            "name": "ROOT",
            "id": "ROOT"
        }
    ],
-   "mssql.autoDisableNonTSqlLanguageService": true,
-   "gitlens.ai.model": "vscode",
-   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-   "docker.extension.enableComposeLanguageServer": false,
-   "chat.viewSessions.orientation": "stacked",
-   "workbench.sideBar.location": "right",
+   "mssql.autoDisableNonTSqlLanguageService": true, // Desactiva servicios no T-SQL
+   "gitlens.ai.model": "vscode", // Modelo AI GitLens
+   "gitlens.ai.vscode.model": "copilot:gpt-4.1", // Modelo Copilot en GitLens
+   "docker.extension.enableComposeLanguageServer": false, // Desactiva lenguaje docker-compose
+   "workbench.sideBar.location": "right", // Sidebar a la derecha
+   "[json]": {
+       "editor.defaultFormatter": "vscode.json-language-features" // Formatter JSON
+   },
+   "chat.viewSessions.orientation": "stacked", // Chats en vertical
+   "workbench.activityBar.location": "hidden", // Oculta barra de actividad
+  "editor.guides.indentation": true, // Muestra líneas guía de indentación (clave para entender estructuras complejas)
+  "editor.stickyScroll.enabled": true, // Mantiene visible el contexto (función/clase actual) al hacer scroll
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true, // Colorea cada tipo de bracket ({}, [], ()) con colores distintos para mejor lectura
+  "editor.cursorBlinking": "solid", // Cursor fijo (más visible y menos distracción que el parpadeo)
+  "editor.fastScrollSensitivity": 5, // Aumenta la velocidad de scroll al usar Shift (navegación rápida en archivos grandes)
+"breadcrumbs.enabled": false,
+"chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/c_/h8cm2x4x1qq5lk5tvxqsnj8h0000gp/T/postman-http-request-pre-request.instructions.md": true
+} // Oculta breadcrumbs (reduce ruido visual arriba del editor)
+
 }

@@ -31,3 +31,4 @@ source "$DOTFILES_PATH/shell/zsh/themes/starship.zsh"
 
 # Load Starship
 eval "$(starship init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
